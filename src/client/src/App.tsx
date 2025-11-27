@@ -7,8 +7,7 @@ import './styles.css';
 interface GameOverPayload {
     finalScore: number;
 }
-
-export const App: React.FC = () => {
+export function App() {
     const [gameState, setGameState] = useState<GameState | null>(null);
     const [playerCount, setPlayerCount] = useState<number>(0);
     const [gameOver, setGameOver] = useState<GameOverPayload | null>(null);

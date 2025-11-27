@@ -7,7 +7,7 @@ interface GameBoardProps {
     isGameOver: boolean;
 }
 
-export const GameBoard: React.FC<GameBoardProps> = ({ board, isGameOver }) => {
+export function GameBoard({ board, isGameOver }: GameBoardProps) {
     return (
         <div className={`board ${isGameOver ? 'board--disabled' : ''}`}>
             {board.map((row, rowIndex) => (

@@ -9,11 +9,11 @@ interface CellProps {
     disabled: boolean;
 }
 
-export const Cell: React.FC<CellProps> = ({ row, col, cell, disabled }) => {
+export function Cell({ row, col, cell, disabled }: CellProps) {
     const handleClick = () => {
         if (disabled) return;
         if (cell.cooldown > 0) return;
-        socket.emit('cellClick', { row, col });
+        socket.emit("cellClick", { row, col });
     };
 
     return (
@@ -29,5 +29,4 @@ export const Cell: React.FC<CellProps> = ({ row, col, cell, disabled }) => {
             )}
         </button>
     );
-};
-
+}
