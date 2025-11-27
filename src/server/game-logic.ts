@@ -33,7 +33,8 @@ function decrementCooldowns(board: Board) {
             }
         }
     }
-}export function handleCellClick(
+}
+export function handleCellClick(
     state: GameState,
     row: number,
     col: number

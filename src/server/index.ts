@@ -112,7 +112,6 @@ io.on("connection", (socket: Socket) => {
         io.emit("playerCount", gameState.activePlayers);
     });
 });
-console.log("A: before listen");
 
 console.log("A: before listen");
 console.log("typeof httpServer =", typeof httpServer);

@@ -6,7 +6,6 @@ import {
 } from '../shared/types';
 import { isValidCombination } from './validation';
 
-console.log('hey');
 
 const SHAPES: Shape[] = ['triangle', 'square', 'diamond', 'circle'];
 const COLORS: Color[] = ['red', 'green', 'blue', 'yellow'];
